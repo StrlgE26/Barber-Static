@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('navAcceder')?.addEventListener('click', () => openAuthModal('login'));
   document.getElementById('navCuentaToggle')?.addEventListener('click', toggleCuentaDropdown);
   document.getElementById('navLogoutBtn')?.addEventListener('click', handleLogout);
-  document.getElementById('navMisCitas')?.addEventListener('click', () => { window.location.href = '/mi-cuenta'; });
+  document.getElementById('navMisCitas')?.addEventListener('click', () => { window.location.href = 'mi-cuenta/'; });
   document.getElementById('authModalClose')?.addEventListener('click', closeAuthModal);
   document.getElementById('authModalBackdrop')?.addEventListener('click', closeAuthModal);
   document.querySelectorAll('.auth-tab').forEach(t => t.addEventListener('click', () => switchAuthTab(t.dataset.tab)));

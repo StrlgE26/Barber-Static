@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>404 — Página no encontrada</title>
+  <script>
+    (function () {
+      var repo = '/Barber-Static/';
+      var path = location.pathname;
+      if (path.indexOf(repo) === 0) location.replace(repo);
+      else location.replace('/');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background:#0a0a0a;color:#fff;font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;margin:0;text-align:center;">
+  <div>
+    <h1 style="font-size:3rem;margin:0;">404</h1>
+    <p>Esta página no existe. <a href="/Barber-Static/" style="color:#b88e3c;">Ir al inicio</a></p>
+  </div>
+</body>
+</html>
